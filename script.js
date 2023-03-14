@@ -49,7 +49,7 @@ function fixCoords() {
   copyButton.addEventListener('click', () => {
     navigator.clipboard.writeText(window[varName])
       .then(() => {
-        alert("Copied to clipboard.");
+        console.log("copied");
       })
       .catch((error) => {
         console.error('Failed to copy: ', error);
