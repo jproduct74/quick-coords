@@ -1,9 +1,4 @@
-// How the script works, in steps
-// X: 12123.35, Y: 12644.46, Z: 161.15
-// X: 12123.35, Y: 12644.46
-// 12123.35, Y: 12644.46
-// 12123.35, 12644.46
-// 12123.35,1,12644.46
+// good luck understanding this
 let counter = 0;
 
 function fixCoords() {
