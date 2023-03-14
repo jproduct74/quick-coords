@@ -43,6 +43,7 @@ function fixCoords() {
     navigator.clipboard.writeText(final)
       .then(() => {
         alert('Copied to clipboard!');
+        location.reload();
       })
       .catch((error) => {
         console.error('Failed to copy: ', error);
