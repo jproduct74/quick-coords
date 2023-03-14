@@ -1,4 +1,4 @@
-// Steps
+// How the script works, in steps
 // X: 12123.35, Y: 12644.46, Z: 161.15
 // X: 12123.35, Y: 12644.46
 // 12123.35, Y: 12644.46
@@ -42,8 +42,9 @@ function fixCoords() {
   copyButton.addEventListener('click', () => {
     navigator.clipboard.writeText(final)
       .then(() => {
-        alert('Copied to clipboard!');
-        location.reload();
+        window.location.reload(true)
+        alert("Copied to clipboard.");
+        
       })
       .catch((error) => {
         console.error('Failed to copy: ', error);
