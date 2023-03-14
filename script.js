@@ -1,8 +1,15 @@
+// Steps
+// X: 12123.35, Y: 12644.46, Z: 161.15
+// X: 12123.35, Y: 12644.46
+// 12123.35, Y: 12644.46
+// 12123.35, 12644.46
+// 12123.35,1,12644.46
 let input, firstLetter, secondLetter, newStr, noX, removeY, result, letter, index;
 let addOneString, indexOne, addOneL, finalResultString, final;
 
 function fixCoords() {
-  input = prompt("Enter the coordinates exactly how you copy them from CF(X: .. Y: .. Z: ..");
+  input = document.getElementById("coordinates").value;
+  document.getElementById("coordinates").value = "";
 
   firstLetter = input.indexOf(",");
   secondLetter = input.indexOf(",", firstLetter + 1);
@@ -43,5 +50,6 @@ function fixCoords() {
   });
 
   document.body.appendChild(copyButton);
+
 }
 
