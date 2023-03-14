@@ -1,7 +1,10 @@
+// How the script works, in steps
 // X: 12123.35, Y: 12644.46, Z: 161.15
 // X: 12123.35, Y: 12644.46
 // 12123.35, Y: 12644.46
 // 12123.35, 12644.46
+// 12123.35,1,12644.46
+
 input = prompt("Enter the coordinates exactly how you copy them from CF(X: .. Y: .. Z: ..");
 let str = input;
 const firstLetter = str.indexOf(",");
@@ -13,7 +16,7 @@ function fixCoords(input) {
   removeXAxis();
   addOne();
   finalResult();
-  showResult();
+  reloadPage();
   return newStr;
 }
 
@@ -46,12 +49,11 @@ const finalResultString = addOneL;
 const final = finalResultString.replace(/\s/g, "");
 
 function finalResult(dinput) {
-  console.log(final);
-}
-
-function showResult(einput) {
   alert("Coords: " + final);
 }
 
+function reloadPage() {
+  location.reload();
+}
+
 fixCoords();
-showResult();
