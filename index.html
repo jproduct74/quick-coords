@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<script src="script.js"></script>
-<title>JavaScript</title>
-</head>
-<body>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="buttons">
+        <a style="font-weight: 900; font-size: 24px;">Copy the coords exactly how you would from CF, below is what it should look like.</a>
+        <a style="color: red; font-weight: 900;">Example</a>
+        <a class="ex" style="background-color: darkgray; width: fit-content;">X: 12123.35, Y: 12644.46, Z: 161.15</a>
+        <button id="main" style="font-family:Arial, Helvetica, sans-serif; font-weight: 900; width: 150px; position: relative; top: 25px; border: 2px solid black;">Fix Coords</button>
+      </div>
+    </div>
+    <script>
+      const button = document.getElementById("main");
+
+      button.addEventListener("click", function() {
+        fixCoords();
+      });
+    </script>
+  </body>
 </html>
