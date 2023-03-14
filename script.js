@@ -4,10 +4,12 @@
 // 12123.35, Y: 12644.46
 // 12123.35, 12644.46
 // 12123.35,1,12644.46
-let input, firstLetter, secondLetter, newStr, noX, removeY, result, letter, index;
-let addOneString, indexOne, addOneL, finalResultString, final;
+let counter = 0;
 
 function fixCoords() {
+  let input, firstLetter, secondLetter, newStr, noX, removeY, result, letter, index;
+  let addOneString, indexOne, addOneL, finalResultString, final;
+
   input = document.getElementById("coordinates").value;
   document.getElementById("coordinates").value = "";
 
@@ -39,12 +41,15 @@ function fixCoords() {
   const copyButton = document.createElement('button');
   copyButton.innerText = 'Copy to clipboard';
   copyButton.classList.add("copybutton");
+
+  const varName = `final${counter}`;
+  window[varName] = final;
+  counter++;
+
   copyButton.addEventListener('click', () => {
-    navigator.clipboard.writeText(final)
+    navigator.clipboard.writeText(window[varName])
       .then(() => {
-        window.location.reload(true)
         alert("Copied to clipboard.");
-        
       })
       .catch((error) => {
         console.error('Failed to copy: ', error);
@@ -52,6 +57,5 @@ function fixCoords() {
   });
 
   document.body.appendChild(copyButton);
-
 }
 
