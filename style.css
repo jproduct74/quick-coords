@@ -15,6 +15,7 @@ font-weight: 700;
 a{
     display: flex;
     flex-direction: column;
+    color: white;
 }
 
 .copybutton
