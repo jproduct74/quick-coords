@@ -130,3 +130,8 @@ a
     font-weight: 800;
 }
 
+button:hover
+{
+    color: white;
+}
+
