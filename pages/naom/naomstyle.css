@@ -1,0 +1,21 @@
+html
+{
+    background-color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 24px;
+}
+
+.container
+{
+    text-align: center;
+    position: relative;
+    top: 25vh;
+}
+
+#alert
+{
+    background-color: transparent;
+    width: 100%;
+    
+}
