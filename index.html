@@ -7,7 +7,13 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
-    </style>               
+    </style>
+    <script>
+        if (/Mobi/.test(navigator.userAgent)) {
+          // if the user agent string contains "Mobi", display a message
+          window.location.href = "./pages/naom/naom.html"
+        }
+      </script>               
 </head>
 <body>
     <div id="header">
