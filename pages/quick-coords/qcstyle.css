@@ -1,0 +1,48 @@
+html {
+    background-image: url(https://webgradients.com/public/webgradients_png/045%20Loon%20Crest.png);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    border: 3px solid black;
+    width: fit-content;
+}
+
+a {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.copybutton {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    width: fit-content;
+    height: fit-content;
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    text-align: center;
+}
+
+.inputUI {
+    padding-top: 24px;
+}
+
+.submit {
+    color: white;
+}
+
+.submit:hover {
+    color: lightgreen;
+}
+
+.copybutton:hover {
+    color: lightgreen;
+}
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="./qcscript.js"></script>
+    <link rel="stylesheet" href="./qcstyle.css">
+    <title>Quick Coords</title>
+</head>
+<body>
+    <div class="container">
+        <div class="buttons">
+            <a style="font-weight: 900; font-size: 24px; padding-bottom: 8px;">Copy the coords exactly how you would from CF, below is what it should look like.</a>
+            <a style="color: red; font-weight: 900;">Example</a>
+            <a class="ex" style="background-color: darkgray; width: fit-content; font-size: 24px; font-weight: 800;">X: 12123.35, Y: 12644.46, Z: 161.15</a>
+            <a class="warn" style="width: fit-content; color: red; font-weight: 700; font-size: 24px; padding-top: 24px;">If it is not in this format, it wont work.</a>
+        </div>
+        <div class="inputUI">
+        <label for="coordinates" style="color: white; ">Enter coordinates:</label>
+            <input type="text" id="coordinates" name="coordinates" style="width: 275px; background-color: transparent; border: none; border-bottom: 2px solid black; font-family: Arial, Helvetica, sans-serif; color: white; font-weight: 700; font-size: 16px;">
+            <button class="submit" onclick="fixCoords()" style="border: none; font-size: 16px; font-weight: 700; background-color: transparent">Submit</button>
+        </div>
+    </div>
+</body>
+</html>
