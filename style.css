@@ -1,48 +1,132 @@
-html {
-    background-image: url(https://webgradients.com/public/webgradients_png/045%20Loon%20Crest.png);
-    font-family: Arial, Helvetica, sans-serif;
+html 
+{
+    background-image: url(./images/bg.png);
+    background-size: cover;
+    margin: 0;
 }
 
-p {
-    color: white;
-    font-size: 32px;
-    font-weight: 700;
-    border: 3px solid black;
-    width: fit-content;
+body
+{
+    margin: 0;
+    padding: 0;
 }
 
-a {
+#header
+{
     display: flex;
-    flex-direction: column;
-    color: white;
+    position: fixed;
+    z-index: 9999;
+    height: 3%;
+    
 }
 
-.copybutton {
-    display: block;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    width: fit-content;
-    height: fit-content;
-    font-size: 24px;
+#navbar
+{
+    position: fixed;
+    right: 1%;
+    max-width: 60%;
+}
+
+button
+{
     background-color: transparent;
     border: none;
-    color: white;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 2.5vh;
+    font-weight: bold;
+}
+
+#middlecontent
+{
+    position: relative;
+    top: 28vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+    height: 25%;
+    font-family: 'Jost', sans-serif;
+    width: 100%;
+}
+
+.aboutme
+{
+    display: flex;
     text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    font-size: 2vh;
 }
 
-.inputUI {
-    padding-top: 24px;
+p
+{
+    font-size: 2vh;
 }
 
-.submit {
-    color: white;
+a
+{
+    text-decoration: none;
+    position: relative;
+    padding: 2vw;
 }
 
-.submit:hover {
-    color: lightgreen;
+#hbackcont
+{
+    background-image: url(./images/secondbg.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 32em;
+    height: 100vh;
 }
 
-.copybutton:hover {
-    color: lightgreen;
+
+.hback
+{
+    height: 7vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+}
+
+#mywork
+{
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+    z-index: 2;
+    width: 100%;
+    bottom: 20vh;
+}
+
+.quickcoordsimg
+{
+    position: relative;
+    left: 6em;
+}
+
+.qcsubtext
+{
+    position: relative;
+    top: 1vh;
+    right: 8vw;
+    font-weight: 800;
+}
+
+.landingpageimg
+{
+    position: relative;
+    
+}
+
+.lpsubtext
+{
+    position: relative;
+    top: 1vh;
+    left: 1vw;
+    font-weight: 800;
 }
 
